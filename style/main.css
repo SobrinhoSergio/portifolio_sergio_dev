@@ -1,0 +1,556 @@
+/*Importando arquivos estilos */
+@import "./responsive.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+html{
+    /* a cada 1rem será considera 10px */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Fira Code', monospace;
+    color: var(--color-text);
+}
+
+
+:root{
+
+  --bg: #fff;
+  --bg-panel: #ebebeb;
+  --color-headings: #0077FF;
+  --color-text: #000;
+  --branco: #fff;
+  --zinza: #aeaeae;
+  --azul: #184fe6;
+
+}
+
+.titulo{
+    font-size: 3.0rem;
+    margin-bottom: 60px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.subtitulo{
+    font-size: 2.0rem;
+    font-weight: normal;
+}
+
+.paragrafo{
+    font-size: 1.5rem;
+    line-height: 30px;
+}
+
+
+.btn-social a{
+    padding: 15px 65px;
+    background-color: var(--color-headings);
+    color: var(--branco);
+    font-size: 1.6rem;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.btn-social{
+    margin-top: 10px;
+}
+
+.btn-social a:hover{
+    background-color: var(--azul);
+}
+
+/*-----Change Theme----*/
+
+.dark-theme{
+
+    --bg: #000;
+    --bg-panel: #191919;
+    --color-text: #fff;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*Header*/
+
+nav{
+    background-color: var(--bg-panel);
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+#cabecalho{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo a{
+    color: var(--color-text);
+}
+
+#logo h1{
+    font-size: 2.5rem;
+}
+
+#menu ul{
+    display: flex;
+    flex-direction: row;
+}
+
+#menu ul li{
+    margin-left: 10px;
+
+}
+
+#menu li a{
+    padding: 10px;
+    color: var(--color-text);
+    font-size: 1.8rem;
+}
+
+#menu a:hover, #action{
+    border-bottom: 1.5px solid var(--color-text);
+}
+
+li i{
+    padding: 0 10px;
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: var(--color-text);
+}
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background-color: var(--color-text);
+    margin: 8px;
+    transition: 0.3s;
+}
+
+/*home*/
+
+header{
+    background-image: url(../imagens/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(0,0,0,0.4);
+    background-blend-mode: color;
+    padding: 210px 0;
+}
+
+#conteudo{
+    width: 500px;
+    padding: 30px 30px 30px 0;
+    color: var(--branco);
+}
+
+#conteudo h2{
+    font-size: 3.5rem;
+}
+
+#conteudo p{
+    font-size: 2.0rem;
+}
+
+#conteudo #btn-linkedin{
+    margin-top: 40px;
+}
+
+#maquina::after {
+    content: '|';
+    opacity: 1;
+    margin-left: 5px;
+    display: inline-block;
+    animation: blink .7s infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+/*main*/
+
+main{
+    background-color: var(--bg);
+    padding: 120px 0;
+    
+}
+
+#sobre-mim h2{
+    font-size: 3.0rem;
+    margin-bottom: 30px;
+}
+
+#sobre-mim{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+#sobre-mim img{
+    border-radius: 5px;
+}
+
+#btn-github{
+    margin: 40px 0;
+}
+
+
+/*section*/
+
+section{
+    padding: 120px 0;
+    background-color: var(--bg-panel);
+}
+
+#container-habilidades{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+}
+
+#container-habilidades .habilidade{
+    max-width: 400px;
+    padding: 30px;
+    background-color: var(--bg);
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.conhecimento h3{
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+
+.conhecimento span i{
+    font-size: 2.8rem;
+    color: var(--color-headings);
+}
+
+/*article*/
+
+article{
+    background-color: var(--bg);
+    padding: 120px 0;
+}
+
+
+#container-projetos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    
+}
+
+#container-projetos .projetos{
+    padding: 15px;
+    background-color: var(--bg-panel);
+    border-radius: 5px;
+}
+
+.projetos p{
+    margin: 15px 0;
+}
+
+.botoes-projetos{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.aovivo-button{
+    outline: none;
+    background-color: var(--color-headings);
+    padding: 5px 10px;
+    color: var(--branco);
+    border:0;
+    font-weight: 500;
+    font-size: 1.5rem;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.aovivo-button:hover {
+    cursor: pointer;
+    background-color: var(--azul);
+          
+}
+
+.aovivo-button:first-child{
+    margin-right: 10px;
+
+}
+
+.aovivo-button i {
+    font-size: 1.5rem;
+          
+}
+
+
+#btn-repositorio{
+    margin: 40px 0;
+}
+
+#btn-repositorio a{
+    color: var(--color-headings);
+}
+
+#btn-repositorio{
+    text-align: center;
+    font-size: 2.0rem;
+}
+
+/*footer*/
+
+footer{
+    background-color: var(--bg-panel);
+    padding: 30px 0;
+}
+footer p{
+    text-align: center;
+    font-size: 1.9rem;
+}
+
+.redes-sociais{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+  
+.redes-sociais li{
+    margin-right: 1.5rem;
+}
+
+.redes-sociais i{
+    font-size: 4.0rem;
+    color: var(--color-text);
+    padding: 10px;
+    transition: 0.3s;
+}
+
+/*Responsividade*/
+
+
+@media screen and (max-width: 999px){
+
+    .container{
+        max-width: 800px;
+    }
+
+    #cabecalho{
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0;
+    }
+
+    #logo{
+        margin-bottom: 15px;
+    }
+
+    #sobre-mim{
+        grid-template-columns: 100%;
+    }
+
+    #container-habilidades{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #container-projetos{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    
+    
+}
+
+
+@media (max-width: 570px){
+
+    .container{
+        max-width: 450px;
+    }
+
+    #cabecalho{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    #logo{
+        margin-bottom: 0;
+    }
+    
+    #logo h1{
+       font-size: 2.0rem;
+       font-weight: normal;
+    }
+
+    #menu ul{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+
+    }
+
+    #menu li{
+        margin-top: 40px;
+       
+    }
+
+    #menu li a{
+        font-weight: normal;
+        font-size: 2.0rem;
+    }
+
+    #menu a:hover, #action{
+        border-bottom: 0;
+    }
+
+
+    body{
+        overflow-x: hidden;
+    }
+
+    #menu{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50vh;
+        height: 100vh;
+        background-color: var(--bg-panel);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+
+    #menu li{
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu{
+        display: block;
+        z-index: 99;
+    }
+
+    #container-habilidades{
+        grid-template-columns: 100%;
+    }
+
+    #container-habilidades .habilidade{
+        max-width: 100%;
+
+    }
+
+    #container-projetos{
+        grid-template-columns: 100%;
+    }
+    
+}
+
+#menu.active{
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade{
+
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+.mobile-menu.active .line1{
+    transform: rotate(-45deg) translate(-8px, 8px)
+    
+}
+
+.mobile-menu.active .line2{
+    opacity: 0;
+    
+}
+
+.mobile-menu.active .line3{
+    transform: rotate(45deg) translate(-5px, -7px)    
+}
+
+[data-anime]{
+    opacity: 0;
+    transition: 3.0s;
+}
+
+[data-anime="left"]{
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"]{
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anime="top"]{
+    transform: translate3d(0, -50px, 0);
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}

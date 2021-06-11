@@ -28,3 +28,4 @@ themeButton.addEventListener('click', ()=>{ //arrow callback
     localStorage.setItem('selected-icon', getCurrentIcon())
 
 })
+

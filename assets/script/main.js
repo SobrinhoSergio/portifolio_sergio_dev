@@ -79,3 +79,30 @@ function typeWriter(elemento) {
 const titulo1 = document.querySelector('#maquina');
 
 typeWriter(titulo1);
+
+
+/*Voltar ao Top*/
+
+jQuery(document).ready(function($){
+
+    $(window).scroll(function(){
+
+        if($(this).scrollTop()>100){
+            $('#top').fadeIn();
+        }
+
+        else{
+            $('#top').fadeOut();
+        }
+    });
+
+    $('#top').click(function(){
+        $('body, html').animate({
+
+            scrollTop: 0
+        }, 600);
+
+        return false;
+    });
+
+});

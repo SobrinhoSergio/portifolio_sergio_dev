@@ -16,6 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" 
     integrity="sha384-sl'e=or8p86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <!-- JQUERY --> 
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/style/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
 
@@ -28,7 +30,7 @@
         <div id="cabecalho" class="container">
 
             <div id="logo">
-                <a href="#"><h1>Portifólio Web.</h1></a>
+                <h1>Portifólio Web.</h1>
             </div>
 
             <div class="mobile-menu">
@@ -40,7 +42,7 @@
             <div id="menu">
 
                 <ul>
-                    <li><a href="#about" id="action">About</a></li>
+                    <li><a href="#about" class="active" >About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -78,7 +80,7 @@
     </header>
 
 
-    <main id="about">
+    <main id="about" class="ff">
 
         <div class="container">
 
@@ -106,7 +108,7 @@
 
     </main>
 
-    <section id="skills">
+    <section id="skills" class="ff">
 
         <div class="container">
 
@@ -168,7 +170,7 @@
 
     </section>
 
-    <article id="projects">
+    <article id="projects" class="ff">
 
         <div class="container">
 
@@ -291,7 +293,7 @@
 
                 <div id="btn-repositorio">
 
-                    <a href="https://github.com/SobrinhoSergio?tab=repositories">Repositórios no GitHub</a>
+                    <a href="https://github.com/SobrinhoSergio?tab=repositories" target="_blank">Repositórios no GitHub</a>
 
                 </div>
 
@@ -301,7 +303,7 @@
 
     <div class="img-parallax"></div>
 
-    <footer class="footer" id="contact">
+    <footer class="footer" id="contact" class="ff">
 
         <div id="footer-header" class="container">
 
@@ -309,7 +311,7 @@
                 
                 <h2 class="title-footer">Educação</h2>
 
-                <p><a href="#">CEFET-RJ</a></p>
+                <p><a href="http://www.cefet-rj.br/index.php/arquivo-geral-pagina-inicial" target="_blank">CEFET-RJ</a></p>
                 <p>Engenheiro de Software</p>
                 <P>3° Período</P>
                 <p>Computação</p>
@@ -353,7 +355,15 @@
         </div>
 
         <div id="desenvolvedor">
-                <p>Desenvolvido por Sérgio Sobrinho.</p>
+                
+            <p>Desenvolvido por Sérgio Sobrinho.</p>
+
+            <div id="top">
+               
+                <span><i class="bi bi-arrow-up-short"></i></span>
+            
+            </div>
+
         </div>
 
     </footer>

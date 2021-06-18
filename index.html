@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
 
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sérgio Sobrinho - Dev Jr.</title>
-
-    <link rel="shortcut icon" href="assets/imagens/icones/faicon.png">
-    
-
     <meta name="author" content="Sérgio de Souza Lima Sobrinho">
-
+    <title>Sérgio Sobrinho - Dev Jr.</title>
+    <!--shortcut icon-->
+    <link rel="shortcut icon" href="assets/imagens/icones/faicon.png">
+    <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
+    <!--FONTAWESOME-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" 
     integrity="sha384-sl'e=or8p86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <!-- JQUERY --> 
     <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <!--Style CSS-->
     <link rel="stylesheet" href="assets/style/main.css">
+    <!--Bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-
 </head>
 
 <body>
@@ -40,19 +40,15 @@
             </div>
 
             <div id="menu">
-
                 <ul>
-                    <li><a href="#about" class="active" >About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li id="dark-mode">
-                        <i class="fas fa-moon" id="theme-button"></i>
-                    </li>
+                    <li class="about"><a href="#about">About</a></li>
+                    <li class="skills"><a href="#skills">Skills</a></li>
+                    <li class="projects"><a href="#projects">Projects</a></li>
+                    <li class="contact"><a href="#contact">Contact</a></li>
+                    <li id="dark-mode"><i class="fas fa-moon" id="theme-button"></i></li>
                 </ul>
-
             </div>
-
+            
         </div>
 
     </nav>
@@ -68,7 +64,7 @@
                     <h2>Sérgio Sobrinho</h2> 
                     <p id="maquina">Desenvolvedor de Software Jr.</p>
                 </span>
-                   
+                    
                     <div class="btn-social" id="btn-linkedin" >
                         <a href="https://www.linkedin.com/in/sobrinhosergio/" target="_blank"><i class="fab fa-linkedin-in"></i> Meu Linkedin</a>
                     </div>
@@ -79,8 +75,7 @@
 
     </header>
 
-
-    <main id="about" class="ff">
+    <main id="about" class="section-container">
 
         <div class="container">
 
@@ -108,7 +103,7 @@
 
     </main>
 
-    <section id="skills" class="ff">
+    <section id="skills" class="section-container">
 
         <div class="container">
 
@@ -170,7 +165,7 @@
 
     </section>
 
-    <article id="projects" class="ff">
+    <article id="projects" class="section-container">
 
         <div class="container">
 
@@ -301,9 +296,9 @@
 
     </article>
 
-    <div class="img-parallax"></div>
+    <footer id="contact" class="section-container">
 
-    <footer class="footer" id="contact" class="ff">
+        <div class="img-parallax"></div>
 
         <div id="footer-header" class="container">
 
@@ -368,11 +363,10 @@
 
     </footer>
 
-    <script src="assets/script/main.js"></script>
-    <script src="assets/script/maquinaEscrever.js"></script>
-    <script src="assets/script/menu-responsive.js"></script>
-    <script src="assets/script/dark-mode.js"></script>
-    <script src="assets/script/scroll-suave.js"></script>
+    <script src="assets/scripts/main.js"></script>
+    <script src="assets/scripts/menu-responsive.js"></script>
+    <script src="assets/scripts/dark-mode.js"></script>
+    <script src="assets/scripts/scroll-suave.js"></script>
 
 </body>
 </html>

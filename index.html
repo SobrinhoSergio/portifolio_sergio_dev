@@ -29,8 +29,8 @@
 
         <div id="cabecalho" class="container">
 
-            <div id="logo">
-                <h1>Portifólio Web.</h1>
+            <div id="logo"  class="topo">
+               <h1>Dev <span>Jr</span>.</h1>
             </div>
 
             <div class="mobile-menu">
@@ -41,11 +41,18 @@
 
             <div id="menu">
                 <ul>
+                    <!--<li class="home action"><a href="#home">Home</a></li>-->
                     <li class="about"><a href="#about">About</a></li>
                     <li class="skills"><a href="#skills">Skills</a></li>
                     <li class="projects"><a href="#projects">Projects</a></li>
                     <li class="contact"><a href="#contact">Contact</a></li>
-                    <li id="dark-mode"><i class="fas fa-moon" id="theme-button"></i></li>
+                    <li id="dark-mode">
+                        <div class="toggle">
+                            <p>Dark Mode </p>
+                            <input id="switch" type="checkbox" name="theme">
+                            <label for="switch">Toggle</label>
+                        </div>
+                    </li>
                 </ul>
             </div>
             
@@ -53,21 +60,25 @@
 
     </nav>
 
-    <header>
+    <header id="home" class="section-container">
 
         <div class="container">
 
             <div id="conteudo" data-anime="left">
 
                 <span>
-                    <p>Fala, sou </p>
+                    <p>Fala, Dev sou </p>
                     <h2>Sérgio Sobrinho</h2> 
                     <p id="maquina">Desenvolvedor de Software Jr.</p>
                 </span>
                     
-                    <div class="btn-social" id="btn-linkedin" >
-                        <a href="https://www.linkedin.com/in/sobrinhosergio/" target="_blank"><i class="fab fa-linkedin-in"></i> Meu Linkedin</a>
-                    </div>
+                <div class="btn-home">
+                        
+                    <a id="btn-explore" href="#about">Explore <i class="fas fa-globe-americas"></i></a>
+
+                    <a id="btn-linkedin" href="https://www.linkedin.com/in/sobrinhosergio/" target="_blank">LinkedIn <i class="fab fa-linkedin-in"></i></a>
+
+                </div>
 
             </div>
 
@@ -92,7 +103,7 @@
                     <p class="paragrafo">Iniciei como Desenvolvedor Front End em 2020. Desde então venho dedicando cerca de várias por dia aos estudos. Vejo que estou no caminho certo pois, vejo os resultados que as horas dedicadas trazem.</p>
 
                     <div class="btn-social" id="btn-github">
-                        <a href="https://github.com/SobrinhoSergio" target="_blank"><i class="fab fa-github"></i> Meu GitHub</a>
+                        <a href="https://github.com/SobrinhoSergio" target="_blank"><i class="fab fa-github"></i> GitHub</a>
                     </div>
 
                 </div>
@@ -341,7 +352,7 @@
                     <li> <a href="https://github.com/SobrinhoSergio" target="_blank"><i class="fab fa-github"></i> </a> </li>
                     <li> <a href="https://www.linkedin.com/in/sobrinhosergio/" target="_blank"><i class="fab fa-linkedin-in"></i></a> </li>
                     <li>  <a href="mailto:sobrinhosergio00@gmail.com" target="_blank"> <i class="far fa-paper-plane" id="email" ></i></a> </li>
-                    <li> <a href="https://www.instagram.com/sergiosob0" target="_blank"><i class="fab fa-instagram"></i></a> </li>
+                    <li> <a href="https://www.instagram.com/sergio_sob0" target="_blank"><i class="fab fa-instagram"></i></a> </li>
                     
                 </ul>
             
@@ -353,10 +364,8 @@
                 
             <p>Desenvolvido por Sérgio Sobrinho.</p>
 
-            <div id="top">
-               
-                <span><i class="bi bi-arrow-up-short"></i></span>
-            
+            <div id="topo" class="topo">
+                <span><i class="bi bi-chevron-up"></i></span>
             </div>
 
         </div>

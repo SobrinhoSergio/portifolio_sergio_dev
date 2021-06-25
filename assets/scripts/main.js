@@ -85,18 +85,18 @@ typeWriter(titulo1);
 
 jQuery(document).ready(function($){
 
-    $(window).scroll(function(){
+    /*$(window).scroll(function(){
 
         if($(this).scrollTop()>100){
-            $('#top').fadeIn();
+            $('.topo').fadeIn();
         }
 
         else{
-            $('#top').fadeOut();
+            $('.topo').fadeOut();
         }
-    });
+    });*/
 
-    $('#top').click(function(){
+    $('.topo').click(function(){
         $('body, html').animate({
 
             scrollTop: 0
